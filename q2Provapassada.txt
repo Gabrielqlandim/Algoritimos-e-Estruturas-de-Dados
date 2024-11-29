@@ -1,0 +1,8 @@
+Um rotação dupla a esquerda so acontece quando o fb de uma subarvore a direita for menor que 0 e quando o fb da arvore que for rotacionada for maior que um, quase a mesma coisa se aplica para a rotação dupla a esquerda, mas para esta, o fb da subarvore a esquerda tem que ser maior que zero e o fb da arvore direita que vai ser rotacionada tem que ser menor que -1. A rotação simples a esquerda so ocorre qunado o fb da arvore que vai ser rotacionada estiver fora do intervalo de -1,0,1 e o fb da subarvore a direita for maior que -1
+
+void roda_esq(Node **raiz){
+    Node *aux = (*raiz)->dir;
+    (*raiz)->dir = aux->esq;
+    aux->esq = *raiz;
+    *raiz = aux;
+}

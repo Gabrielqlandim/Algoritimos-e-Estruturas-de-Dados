@@ -1,0 +1,7 @@
+1) vai receber o endereço de y
+2)vai receber o valor que pty aponta
+3)vai acrescentar mais um no valor que o ponteiro aponta
+4) soma o valor de x com o do ponteiro
+5)print 5
+6) printa o endereço
+7)printa o endereço
